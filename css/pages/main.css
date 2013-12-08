@@ -1,0 +1,123 @@
+/* @import "core/constants"; */
+/* line 6, ../../../sass/pages/main.scss */
+.main-header {
+  color: white;
+  background-color: #fbbbc2;
+  padding-bottom: 10px;
+  background-image: url(/img/scalloped-border.png);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  background-size: auto 10px;
+  margin-bottom: 20px;
+}
+
+/* line 17, ../../../sass/pages/main.scss */
+.header-brunch-stamp {
+  height: 150px;
+  width: 327.19745px;
+  background-image: url(/img/brunch-stamp.png);
+  background-size: auto 150px;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+/* line 26, ../../../sass/pages/main.scss */
+.header-text {
+  margin: 0 0 0 20px;
+  height: 150px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(/img/header.gif);
+  background-size: auto 110px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+@media (max-width: 767px) {
+  /* line 26, ../../../sass/pages/main.scss */
+  .header-text {
+    height: 100px;
+    margin-left: 0;
+    background-size: contain;
+  }
+}
+
+/* line 42, ../../../sass/pages/main.scss */
+.header-text-link {
+  height: 150px;
+  display: block;
+}
+
+/* line 47, ../../../sass/pages/main.scss */
+.main-nav {
+  font-family: 'Oranienbaum', serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 18px;
+}
+/* line 52, ../../../sass/pages/main.scss */
+.main-nav a {
+  line-height: 1 !important;
+  padding: 0.5em 1em;
+  font-weight: inherit;
+}
+@media (max-width: 767px) {
+  /* line 47, ../../../sass/pages/main.scss */
+  .main-nav {
+    margin-top: 0;
+    border-color: #fbbbc2;
+  }
+  /* line 61, ../../../sass/pages/main.scss */
+  .main-nav a {
+    border-color: #fbbbc2 !important;
+  }
+}
+
+/* line 67, ../../../sass/pages/main.scss */
+.ampersand {
+  font-family: 'Playfair Display', 'Oranienbaum', serif;
+  font-weight: 400;
+}
+
+/* line 73, ../../../sass/pages/main.scss */
+.content h1 {
+  color: #ff4498;
+  font-family: 'Oranienbaum', serif;
+  font-weight: 400;
+  font-size: 3.0em;
+}
+/* line 78, ../../../sass/pages/main.scss */
+.content h1::after {
+  content: "\00200B";
+  font-family: 'Playfair Display', 'Oranienbaum', serif;
+}
+@media (max-width: 767px) {
+  /* line 73, ../../../sass/pages/main.scss */
+  .content h1 {
+    font-size: 2.0em;
+  }
+}
+/* line 88, ../../../sass/pages/main.scss */
+.content h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1;
+  margin-top: 2em;
+}
+
+/* line 99, ../../../sass/pages/main.scss */
+blockquote {
+  font-size: inherit;
+}
+
+/* line 103, ../../../sass/pages/main.scss */
+.nav button.hamburger {
+  color: #ff4498;
+}
+
+/* line 107, ../../../sass/pages/main.scss */
+.message {
+  font-weight: inherit;
+}

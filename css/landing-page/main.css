@@ -1,0 +1,314 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot');
+	src:url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/icomoon.ttf') format('truetype'),
+		url('/fonts/icomoon.woff') format('woff'),
+		url('/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+	content: "\e600";
+}
+.icon-pause:before {
+	content: "\e601";
+}
+.icon-volume-high:before {
+	content: "\e602";
+}
+.icon-volume-mute:before {
+	content: "\e603";
+}
+
+.landing-page {
+  background: rgb(248, 247, 229);
+  min-height: 100%;
+}
+
+.landing-page-main-container {
+  background: url("/img/smaller_chevron_background.png") bottom left repeat;
+}
+
+.landing-page-main {
+  padding: 60px 0 80px;
+  padding: 60px 0 53px;
+}
+
+.shadow {
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px #888;
+  box-shadow: 0 0 5px #888;
+}
+
+.landing-page-frame{
+  /* 3/4 aspect ratio */
+  padding-top: 75%;
+
+  /* 9/16 aspect ratio */
+  /* padding-top: 56.25%; */
+  position: relative;
+}
+
+.slideshow {
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slideshow img {
+  max-width: 100%;
+  max-height: 100%;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  backface-visibility:     hidden;
+
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  -ms-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slideshow img.fade {
+  opacity: 0;
+}
+
+.footer-message {
+  display: block;
+  text-align: center;
+  background: rgb(248, 247, 229);
+  border: none;
+  padding: 10px 0;
+}
+
+.footer-message-text {
+  max-width: 67%;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+/* pink: #f6495d */
+/* gold: #dbbe78 */
+
+.button{
+  font-size: 16px;
+  color : #f6495d;
+  background: rgb(248, 247, 229);
+  border: none;
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    width: 922px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .wrapper {
+    max-width: 600px;
+  }
+
+  .landing-page-main {
+    padding: 30px 0 23px;
+  }
+
+  .footer-message-text {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
